@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Password Validator Result</title>
+	<style>
+		body {
+			background-color: #c3dbc8;
+		}
+		#container {
+			width: 50%;
+			margin: 70px auto 0px auto;
+			text-align: center;
+		}
+		#heading {
+			border-style: solid;
+			border-width: 2px;
+			border-radius: 20px;
+			border-color: #032d0e;
+			background-color: #2c80e0;
+			color: white;
+			padding: 10px;
+		}
+		#result {
+			border-style: solid;
+			border-width: 2px;
+			border-radius: 20px;
+			border-color: #032d0e;
+			background-color: #2c80e0;
+			padding: 15px;
+		}
+		#msg {
+			border-left: 6px solid #032d0e;
+			background-color: lightgrey;
+		}
+		#list {
+			list-style: circle;
+			width: 60%;
+			display: block;
+			margin: auto;
+			border: 2px solid blue;
+			background-color: lightblue;
+			height: 50vh;
+			overflow: scroll;
+		}
+		#item {
+			margin: 5px;
+			background-color: lightyellow;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<h1 id="heading">Password Validation</h1>
+		<div id="result">
+			<h2 id="msg">List of validations of all passwords</h2>
+			<ul id="list">
+				<%for (var password in passwords) {%>
+					<li id="item"><%=passwords[password]%></li>
+				<%}%>
+			</ul> 
+		</div>
+	</div>
+</body>
+</html>

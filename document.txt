@@ -1,0 +1,30 @@
+This is a Node Js project made for the purpose of password validation.
+
+To be acceptable, a password must satisfy these three rules:
+- It must contain at least one vowel.
+- It cannot contain three consecutive vowels or three consecutive consonants.
+- It cannot contain two consecutive occurrences of the same letter, except for 'ee' or 'oo'.
+- (For the purposes of this problem, the vowels are 'a', 'e', 'i', 'o', and 'u'; all other letters are consonants.) Note that these rules are not perfect; there are many
+common/pronounceable words that are not acceptable.
+
+The project is made up using Node js with Express and the following packages have been used in the project
+
+"body-parser": "^1.19.0",
+"ejs": "^2.6.1",
+"express": "^4.16.4",
+"file-system": "^2.2.2",
+"multer": "^1.4.1",
+"nodemon": "^1.19.0"
+"chai": "^4.2.0",
+"mocha": "^6.1.4"
+
+Steps to run the application :-
+- npm install --save
+- To run Unit Test - npm test
+- To start application - nodemon index.js
+
+index.js - The main file where the server is created
+functions.js - File containing all the functions for password validations
+index.html - template for the file upload page
+result.ejs - Template for displaying the validations of all the passwords
+test.js - file for unit testing
